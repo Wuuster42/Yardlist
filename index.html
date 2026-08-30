@@ -4,35 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yardlist — honest heat and cold for the backyard</title>
-  <meta name="description" content="Yardlist is a slow directory. One brand, one page, an honest verdict. Patio heaters, fire pits, and outdoor cooling — no top-ten slideshows." />
+  <meta name="description" content="Yardlist is a slow directory. One brand, one page, an honest verdict." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="/">Yardlist</a>
+    <a class="logo" href="index.html">Yardlist</a>
     <p class="tagline">The best heat and cold for a backyard.</p>
   </header>
-
   <main>
     <section class="intro">
       <h1>A slow directory.</h1>
-      <p>
-        One brand, one page, an honest verdict. No top-ten slideshows.
-        No unpaid samples dressed up as tests.
-      </p>
+      <p>One brand, one page, an honest verdict. No top-ten slideshows. No unpaid samples dressed up as tests.</p>
     </section>
-
     <section class="filters" aria-label="Filter reviews">
-      <label>
-        Category
+      <label>Category
         <select id="filter-category">
           <option value="all">All</option>
           <option value="heat">Heat</option>
           <option value="cold">Cold</option>
         </select>
       </label>
-      <label>
-        Type
+      <label>Type
         <select id="filter-type">
           <option value="all">All</option>
           <option value="fire-pit">Fire pit</option>
@@ -40,8 +33,7 @@
           <option value="cooler">Cooler</option>
         </select>
       </label>
-      <label>
-        Verdict
+      <label>Verdict
         <select id="filter-verdict">
           <option value="all">All</option>
           <option value="buy">Buy</option>
@@ -51,14 +43,11 @@
       </label>
       <p class="filter-count" id="filter-count"></p>
     </section>
-
     <section class="reviews" id="reviews"></section>
   </main>
-
   <footer class="site-footer">
     <p>Yardlist does not take free product in exchange for coverage.</p>
   </footer>
-
   <script src="app.js"></script>
 </body>
 </html>
