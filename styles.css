@@ -1,0 +1,137 @@
+:root {
+  --bg: #f4efe6;
+  --ink: #1c1914;
+  --muted: #5c564c;
+  --line: #d4cbb8;
+  --card: #fffaf2;
+  --accent: #8b3a2a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+.logo {
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+select {
+  font: inherit;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.filter-count {
+  grid-column: 1 / -1;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.review {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.review header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.review h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.verdict {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--ink);
+  padding: 0.15rem 0.45rem;
+  white-space: nowrap;
+}
+
+.verdict.buy { background: var(--ink); color: var(--bg); }
+.verdict.wait { color: var(--accent); border-color: var(--accent); }
+.verdict.skip { color: var(--muted); }
+
+.meta {
+  margin: 0.35rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.review p { margin: 0 0 0.75rem; }
+.review p:last-child { margin-bottom: 0; }
+
+.empty {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.site-footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .filters { grid-template-columns: 1fr; }
+}
